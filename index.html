@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CamPaint</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<section>
+			<div id="tools">
+				<div id="colors">
+					<button id="black" onclick="changeColor('black')"></button>
+					<button id="white" onclick="changeColor('white')"></button>
+					<button id="red" onclick="changeColor('red')"></button>
+					<button id="green" onclick="changeColor('green')"></button>
+					<button id="blue" onclick="changeColor('blue')"></button>
+				</div>
+
+				<div id="clear">
+					<button id="clearCanvas" onclick="clearCanvas()">CLEAR ALL</button>
+					<button id="brushSize1" onclick="changeBrushSize(5)">1</button>
+					<button id="brushSize2" onclick="changeBrushSize(20)">2</button>
+					<button id="brushSize3" onclick="changeBrushSize(30)">3</button>
+					<button id="brushSize4" onclick="changeBrushSize(40)">4</button>
+					<button id="select" onclick="select()">Select</button>
+					<button id="fill">Fill In</button>
+					<button id="openFile" onclick="triggerClick()">Open Img	</button>
+				</div>
+			</div>
+
+			
+
+			<canvas id="canvas" width="800" height="450"></canvas>
+			<input id="file" type="file" accept="image/*" />
+		</section>
+		
+		<script type="text/javascript" src="campaint.js"></script>		
+</body>
+
+</html>

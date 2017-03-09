@@ -1,0 +1,89 @@
+section {
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+canvas{
+	display: block;
+	border: 1px solid black;
+	margin: 10px auto 0px;
+}
+
+button {
+	outline: 0;
+	border: 0;
+
+}
+
+#tools{
+	
+	width: 800px;
+	height: 135px;
+	margin: 0px auto;
+}
+
+#colors{
+	width: 100%;
+	height: 20px;
+}
+
+#colors button{
+	width: 20%;
+	height: 10px;
+	margin-top: 5px;
+	float: left;
+}
+
+#black{
+	background: black;
+}
+
+#white{
+	background: white;
+}
+
+#red{
+	background: red;
+}
+
+#green{
+	background: green;
+}
+#blue{
+	background: blue;
+}
+#colors button:hover{
+	opacity: 0.5;
+}
+
+#clear{
+	width: 100%;
+	height: 60px;
+}
+
+#clear button{
+	width: 20%;
+	height: 50px;
+	margin-top: 5px;
+	background: #303030;
+	color: white;
+	cursor: pointer;
+	float: left;
+}
+
+#clear button:hover{
+	opacity: 0.5;
+}
+
+#clearCanvas{ font: 25px impact; }
+#brushSize1{ font: 10px impact; }
+#brushSize2{ font: 20px impact; }
+#brushSize3{ font: 30px impact; }
+#brushSize4{ font: 40px impact; }
+#openFile, #select, #fill{ font: 25px existence;}
+
+#file{
+	opacity: 0;
+}
+
