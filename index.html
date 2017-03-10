@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>CamPaint</title>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -10,11 +10,12 @@
 			<div id="tools">
 				<div id="colors">
 					<button id="black" onclick="changeColor('black')"></button>
-					<button id="white" onclick="changeColor('white')"></button>
 					<button id="red" onclick="changeColor('red')"></button>
 					<button id="green" onclick="changeColor('green')"></button>
 					<button id="blue" onclick="changeColor('blue')"></button>
+					<button id="yellow" onclick="changeColor('yellow')"></button>
 				</div>
+
 
 				<div id="clear">
 					<button id="clearCanvas" onclick="clearCanvas()">CLEAR ALL</button>
@@ -26,6 +27,19 @@
 					<button id="fill">Fill In</button>
 					<button id="openFile" onclick="triggerClick()">Open Img	</button>
 				</div>
+				<div id="filters">
+					<button class="js-button-action" data-filter="noise">1</button>
+					<button class="js-button-action" data-filter="inverse">2</button>
+					<button class="js-button-action" data-filter="treshold">3</button>
+					<button>4</button>
+					<button>5</button>
+					<button>6</button>
+					<button>7</button>
+					<button>8</button>
+				</div>
+				
+
+					<img id="white" src = "kants02.png" onclick="changeColor('white')" width="50px;">
 			</div>
 
 			

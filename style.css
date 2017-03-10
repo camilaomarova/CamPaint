@@ -41,10 +41,15 @@ button {
 
 #white{
 	background: white;
+	float: left;
 }
 
 #red{
 	background: red;
+}
+
+#yellow {
+	background: yellow;
 }
 
 #green{
@@ -81,9 +86,13 @@ button {
 #brushSize2{ font: 20px impact; }
 #brushSize3{ font: 30px impact; }
 #brushSize4{ font: 40px impact; }
-#openFile, #select, #fill{ font: 25px existence;}
+#openFile, #select, #fill{ font: 25px existence;
+	display: block;
+}
 
 #file{
 	opacity: 0;
 }
+
+
 
