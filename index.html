@@ -18,28 +18,31 @@
 
 
 				<div id="clear">
-					<button id="clearCanvas" onclick="clearCanvas()">CLEAR ALL</button>
+					<button id="clearCanvas"><a style="text-decoration: none; color: white;" href="#clear">CLEAR ALL</a></button>
 					<button id="brushSize1" onclick="changeBrushSize(5)">1</button>
 					<button id="brushSize2" onclick="changeBrushSize(20)">2</button>
 					<button id="brushSize3" onclick="changeBrushSize(30)">3</button>
 					<button id="brushSize4" onclick="changeBrushSize(40)">4</button>
 					<button id="select" onclick="select()">Select</button>
-					<button id="fill">Fill In</button>
+					<button id="fill" ><a href="#fill" style="text-decoration: none; color: white;">Fill In</a></button>
+					 
+					 <br/>
 					<button id="openFile" onclick="triggerClick()">Open Img	</button>
 				</div>
 				<div id="filters">
-					<button class="js-button-action" data-filter="noise">1</button>
-					<button class="js-button-action" data-filter="inverse">2</button>
-					<button class="js-button-action" data-filter="treshold">3</button>
-					<button>4</button>
-					<button>5</button>
-					<button>6</button>
-					<button>7</button>
-					<button>8</button>
+					<button class="btn" onclick="filtBright()">Brightness</button>
+					<button class="btn" onclick="filtGray()">Grayscale</button>
+					<button class="btn" onclick="filtMary()">Blood Mary</button>
+					<button class="btn" onclick="filtViolet()">Viola</button>
+					<button class="btn" onclick="filtPie()">PIE</button>
+					<button class="btn" onclick="filtNevidimka()">Nevidimka</button>
+					<button class="btn" onclick="filtRetro()">Retro</button>
+					<button class="btn" onclick="filtHustl()">Hustl</button>
+					<a href="#paint" style="color: white;">Paint</a>  
 				</div>
 				
 
-					<img id="white" src = "kants02.png" onclick="changeColor('white')" width="50px;">
+					<img id="white" id="grayscale" src = "kants02.png" onclick="changeColor('white')" width="50px;">
 			</div>
 
 			
